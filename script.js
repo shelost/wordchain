@@ -212,7 +212,7 @@ function Reply(end) {
 
 // start game
 function init() {
-    input.readOnly = 'false'
+    input.readOnly = ''
 
     let index = Math.round(Math.random() * words.length)
     let w = words[index]

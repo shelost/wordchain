@@ -399,10 +399,13 @@ button {
     margin: 10px;
   }
   #main #controls {
+    position: fixed;
+    top: 30px;
+    left: calc(50vw - 90px);
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: 20px;
+    width: 180px;
   }
   #main #controls img {
     height: 30px;
@@ -415,19 +418,20 @@ button {
     color: rgba(0, 0, 0, 0.5);
   }
   #game {
+    position: fixed;
+    top: 100px;
+    left: 10px;
     width: calc(100vw - 60px);
-    height: calc(100vh - 150px);
     padding: 20px;
     border-radius: 20px;
   }
   #words {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100% - 50px);
+    height: calc(93vh - 200px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

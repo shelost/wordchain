@@ -352,8 +352,11 @@ button{
         }
 
         #controls{
+            position: fixed;
+            top: 30px;
+            left: calc(50vw - 90px);
             align-items: flex-end;
-            margin-top: 20px;
+            width: 180px;
             img{
                 height: 30px;
             }
@@ -367,9 +370,11 @@ button{
     }
 
     #game{
-        //position: relative;
+        position: fixed;
+        top: 100px;
+        left: 10px;
         width: calc(100vw - 60px);
-        height: calc(100vh - 150px);
+        //height: calc(100vh - 150px);
         //flex: 1;
         padding: 20px;
         //border: 1px solid rgba(black, 0.1);
@@ -380,12 +385,8 @@ button{
     #words{
         overflow-y: scroll;
         overflow-x: hidden;
-
-        height: calc(100% - 50px);
+        height: calc(93vh - 200px);
         display: flex;
-
-        background-color: red;
-
         flex-direction: column;
         .word{
 
