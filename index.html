@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wordchain </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Assets/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../Assets/favicon-16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,200;1,6..72,300;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700;1,6..72,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href = 'style.css' rel = 'stylesheet'>
+</head>
+<body>
+
+    <div id = 'time'>
+        <div id = 'bar'></div>
+    </div>
+
+    <div id = 'navbar'>
+        <!--
+        <div id = 'mast'>
+            <img src = 'wordchain-34.png' alt = 'logo'>
+        </div>
+        -->
+    </div>
+
+
+    <div id = 'main'>
+        <div id = 'controls' class = 'box'>
+            <img src = 'wordchain-34.png' alt = 'logo'>
+            <h3> by Heewon Ahn </h3>
+        </div>
+        <div id = 'game'>
+            <div id = 'words'></div>
+            <input id = 'input' type = 'text' placeholder = 'type a word...'>
+        </div>
+        <div id = 'expo' class = 'box'>
+            <p>
+                THE RULES
+            </p>
+            <p>
+                Type a word that <b> begins </b> with the <b> last 2 letters </b> of the previous word before the timer runs out.
+            </p>
+            <p>
+                However, your responses must be <b> possible </b> to respond to. E.g. you can't use <b> "err" </b> as a
+                word because there aren't any words that begin with <b> "rr"</b>!
+            </p>
+            <p>
+                The dictionary of valid words was borrowed from <a href = 'http://www.mieliestronk.com/wordlist.html'> this </a> website,
+                with a few modifications.
+            </p>
+            <p>
+                Try to get to <b> 20</b>!
+            </p>
+            <p>
+                Good luck!
+            </p>
+        </div>
+    </div>
+
+    <div id = 'fab'>
+        ?
+    </div>
+
+
+    <h3 id = 'message'> message </h3>
+
+    <div id = 'splash'>
+        <h1> Possible answers: </h1>
+        <div id = 'options'> </div>
+        <h1> Your Score: </h1>
+        <h2 id = 'score'> 0 </h2>
+        <button id = 'replay'> Play Again </button>
+    </div>
+
+
+</body>
+<script src="functions.js"></script>
+<script src="script.js"></script>
+</html>
