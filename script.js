@@ -212,6 +212,8 @@ function Reply(end) {
 
 // start game
 function init() {
+    input.readOnly = 'false'
+
     let index = Math.round(Math.random() * words.length)
     let w = words[index]
     let end = w.substring(w.length - 2)
@@ -267,6 +269,7 @@ function Reset() {
 // end game
 function End() {
 
+    input.readOnly = 'true'
     score.innerHTML = SCORE
     splash.style.top = '0'
 
@@ -328,7 +331,7 @@ window.addEventListener('keyup', e => {
     switch (e.key) {
         case 'Enter':
             if (splash.style.top != '0px') {
-                Submit(Id('input').value)
+                Submit(Id('input').value.toLowerCase())
             }
             break
         case ' ':
